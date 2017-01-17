@@ -30,6 +30,7 @@ background-attachment: fixed;
 li{
 	color: green;
 	list-style-type: none;
+	font-size: 20px;
 }
 p{
 	color: orange;
