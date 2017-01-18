@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+
+	<link href="main.css" rel="stylesheet" type="text/css"/>
+	<link href="animate.css" rel="stylesheet" type="text/css"/>
+</head>
+<body background="https://www.crystalmsuk.com/ML_Website/ImageUrl/SYD3517_CT.jpg">
+<div class="item animated bounceInDown">
+<h1 align="center">Login into the Site </h1>
+</div>
+<div class="item1 animated slideInRight">
+<h3>Please enter a vaid username and password</h3>
+</div>
+
+<p>*If you havent registered to the site yet then enter the default username and password provided by the developer</p>
+<script type="text/javascript">
+	function clicked(){
+	var user = document.getElementById('username');
+	var pass = document.getElementById('password');
+
+	var coruser = "test";
+	var corpass = "2053";
+
+	if(user.value == coruser){
+		if(pass.value == corpass){
+			
+			window.open("https://abhiaussie.github.io/australia.github.io/")
+		}else{
+			window.alert("Incorrect username or password");
+		}
+	}else{
+	   window.alert("Incorrect username or password");	
+	}
+}
+</script>
+
+<center>
+	<input type="text" id="username" placeholder="Username" ><br>
+	<input type="password" id="password" placeholder="Password" ><br>
+	<input type="button" value="Log on" onclick="clicked()" ><br>
+
+</center>
+
+
+</body>
+</html>
