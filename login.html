@@ -1,155 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<!--
-		<img src="http://cstri.res.in/wp-content/uploads/2015/10/under-maintenance.jpg">
-	   <h1> 
-	<li><a href="down.html">Why I am seeing this message?</a></li>
-	</h1>
--->
-	
-	<title>dreamAustralia.au</title>
+	<title>Login</title>
+
 	<link href="main.css" rel="stylesheet" type="text/css"/>
 	<link href="animate.css" rel="stylesheet" type="text/css"/>
-	<style type="text/css">
-		.item{
-			background-color: none;
-		}
-		.item{
-			background-color: none;
-		}
-	</style>
-		<style>
-.dropbtn {
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 15px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.dropdown:hover .dropbtn {
-    background-color: #3e8e41;
-}
-</style>
-	
 </head>
-
-<body background="http://www.designbolts.com/wp-content/uploads/2012/11/Black-wood-photoshop-pattern-for-website-background.jpg">
-
+<body background="https://www.crystalmsuk.com/ML_Website/ImageUrl/SYD3517_CT.jpg">
 <div class="item animated bounceInDown">
 <h1 align="center">One Stop For HISTORY and GEOGRAPHY of our FAVOURITE COUNTRIES </h1>
 </div>
-
-
-<ul>
-<li>Home</li>
-	 <div class="w3-panel w3-blue w3-round-xlarge">
-<div class="dropdown">
-  <button class="dropbtn">Explore History</button>
-  <div class="dropdown-content">
-    <a href="page0.html">Australian History</a>
-    <a href="page1.html">Indian History</a>
- 
-  </div>
-  <div class="dropdown">
-  <button class="dropbtn">Explore Gallery</button>
-  <div class="dropdown-content">
-    <a href="page11.html">Australian Gallery</a>
-    <a href="page2.html">Indian Gallery</a>
- 
-  </div>
-	
+<div class="item animated bounceInDown">
+<h2 align="center">Login into the Site </h2>
 </div>
-<br>
-	<p> Complete schedule of the <mark>ICC #CT2017</mark> is <strike> currently  not  available </strike>      now available!</p>  
-<li><a href="page3.html">ICC Champions Trophy 2017</a></li>
-	
 <div class="item1 animated slideInRight">
-<h1>Upcoming Events:<br>
+<h4>Please enter a vaid username and password</h4>
 </div>
-</h1>
-<h3>26th January:</h3>
-<h4>
-<div class="item1 animated shake">
-<li><a href="page0.html">Australia Day.</a></li> 
-<li ><a href="page1.html">Republic Day of India.</a></li> 
-</h4>
 
-</div>
-</ul>
-<div class="item1 animated bounceInLeft">
-<h1 align="center">AUSTRALIA:</h1>
-</div>
-	<center>
-<li align="center"><a href="page0.html">Australian History</a></li>
-<li align="center"><a href="http://www.australia.com/en-in">Explore Australia</a></li>
-<li align="center"><a href="page2.html">Australian Gallery</a></li>
-	<li align="center"><a href="page02.html">Cricket Australia</a></li>
-<li align="center"><a href="http://www.accuweather.com/en/au/australia-weather">weatheraustralia.au</a></li>
-	</center>
-<div class="item1 animated bounceInRight">
-<h1 align="center">     INDIA:     </h1>
-</div>
+<p>*If you havent registered to the site yet then enter the default username and password provided by the developer.</p>
+<script type="text/javascript">
+	function clicked(){
+	var user = document.getElementById('username');
+	var pass = document.getElementById('password');
+
+	
+
+	if(user.value == "aussie")
+	{
+		if(pass.value == "1234")
+		{
+			
+			window.open("https://abhiaussie.github.io/australia.github.io/login.html")
+		}
+
+			else{
+
+			window.alert("Incorrect username or password");
+		}
+	
+	}
+	else
+	{
+	   window.alert("Incorrect username or password");	
+	}
+	
+}
+</script>
+
 <center>
-<li align="center"><a href="page1.html">Indian history</a></li>
-<li align="center"><a href="page12.html">Explore India</a></li>
-<li align="center"><a href="page11.html">Indian Gallery</a></li>
-<li align="center"><a href="http://www.accuweather.com/en/in/india-weather">weatherindia.co.in</a></li>
-	</center>
-<br>
-	
-	<br>
-	<br>
-	
-	
-	<br>
-	<br>
-	<br>
-	<br>
-	
+	<input type="text" id="username" placeholder="Username" ><br>
+	<input type="password" id="password" placeholder="Password" ><br>
+	<input type="button" value="Log on" onclick="clicked()" ><br>
 
-<footer>
-	
-	<li align="right"><a href="contact.html">contact us</a></li>
-	<p>Created and Managed by:<br>
-		© 2017 abhiaussie.com.au<br>
-		All Rights Reserved</p>
-	<img src="http://www.australia.com/etc/designs/tourismaustralia/clientlibs/imgs/logo/logo_australia_com.png">
-	    
-	
-	     
-	<img align="right" src="http://cachetinnovation.com/wp-content/uploads/2015/02/incredible.png">
+</center>
 
-				</footer>
+
 </body>
-
 </html>
-
