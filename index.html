@@ -19,7 +19,31 @@
 		}
 	</style>
 	
-	
+	<style>
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 15px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+</style>
 </head>
 
 <body background="http://www.designbolts.com/wp-content/uploads/2012/11/Black-wood-photoshop-pattern-for-website-background.jpg">
@@ -36,7 +60,11 @@
 </div>
 <br>
 	<p> Complete schedule of the <mark>ICC #CT2017</mark> is <strike> currently  not  available </strike>      now available!</p>  
-<li><a href="page3.html">ICC Champions Trophy 2017</a></li>
+	<div class="tooltip">
+	<li><a href="page3.html">ICC Champions Trophy 2017</a></li>
+  <span class="tooltiptext">Schedule and Updates</span>
+</div>
+
 	
 <div class="item1 animated slideInRight">
 <h1>Upcoming Events:<br>
@@ -55,6 +83,7 @@
 <h1 align="center">AUSTRALIA:</h1>
 </div>
 	<center>
+
 <li align="center"><a href="page0.html">Australian History</a></li>
 <li align="center"><a href="http://www.australia.com/en-in">Explore Australia</a></li>
 <li align="center"><a href="page2.html">Australian Gallery</a></li>
@@ -84,10 +113,12 @@
 
 <footer>
 	<li><a href="login.html">Login</a></li>
+	<li><a href="#">Privacy Policy</a></li>
 	<li align="right"><a href="contact.html">contact us</a></li>
 	<p>Created and Managed by:<br>
 		© 2017 abhiaussie.com.au<br>
 		All Rights Reserved</p>
+
 	<img src="http://www.australia.com/etc/designs/tourismaustralia/clientlibs/imgs/logo/logo_australia_com.png">
 	    
 	
@@ -98,5 +129,3 @@
 </body>
 
 </html>
--->
-
