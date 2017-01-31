@@ -43,6 +43,60 @@ h1{
 	background-color: black;
 }
 </style>
+	<table class="timer">
+	<tr>
+		<td colspan="4">#CT2017 Countdown</td>
+	</tr>
+	<tr>
+		<td id="days">1</td>
+		<td id="hours">4</td>
+		<td id="minutes">1</td>
+		<td id="seconds">2</td>
+	</tr>
+	<tr>
+	<td>Days</td>
+	<td>Hours</td>
+	<td>Minutes</td>
+	<td>Seconds</td>
+	</tr>
+
+</table>
+<script type="text/javascript">
+	function countdown(){
+		var now = new Date();
+		var eventDate = new Date(2017, 5, 1);
+
+		var currentTime = now.getTime();
+		var eventTime = eventDate.getTime();
+
+		var remTime = eventTime - currentTime;
+		var s = Math.floor(remTime/1000);
+		var m = Math.floor(s/60);
+		var h = Math.floor(m/60);
+		var d = Math.floor(h/24);
+
+		h%=24;
+		m%=60;
+		s%=60;
+
+		h= (h < 10) ? "0" + h : h;
+		m= (m < 10) ? "0" + m : m;
+		s= (s < 10) ? "0" + s : s;
+
+
+		document.getElementById("days").textContent =d;
+			document.getElementById("days").innerText =d;
+				document.getElementById("hours").textContent =h;
+					document.getElementById("minutes").textContent =m;
+						document.getElementById("seconds").textContent =s;
+
+
+
+						setTimeout(countdown, 1000);
+	}
+
+	countdown();
+</script>
 <h2>Group A</h2>
 <table>
   <tr>
